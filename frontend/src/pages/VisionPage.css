@@ -1,0 +1,143 @@
+.vision-page {
+  min-height: 100vh;
+  background: #0a1e25;
+  color: #ffffff;
+}
+
+.vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.vision-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.vision-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vision-header p {
+  font-size: 1.2rem;
+  color: #a0aec0;
+}
+
+.vision-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vision-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4facfe;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  color: #00f2fe;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+.goals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.goal-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateY(-5px);
+}
+
+.goal-item h3 {
+  color: #00f2fe;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.goal-item p {
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+.future-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.future-list li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+.future-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #4facfe;
+}
+
+@media (max-width: 768px) {
+  .vision-container {
+    padding: 1rem;
+  }
+
+  .vision-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .vision-section {
+    padding: 1.5rem;
+  }
+
+  .values-grid,
+  .goals-list {
+    grid-template-columns: 1fr;
+  }
+} 

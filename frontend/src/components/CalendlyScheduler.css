@@ -1,0 +1,73 @@
+.calendly-scheduler {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-types {
+  margin: 2rem 0;
+}
+
+.event-types select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.scheduling-link {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.scheduling-link a {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.scheduling-link a:hover {
+  text-decoration: underline;
+}
+
+.scheduled-events {
+  margin-top: 2rem;
+}
+
+.event-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+  color: #666;
+} 

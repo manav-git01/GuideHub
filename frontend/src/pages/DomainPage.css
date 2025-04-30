@@ -1,0 +1,257 @@
+.domain-page {
+  min-height: 100vh;
+  background-color: var(--primary-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.notifications-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notification {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.notification.success {
+  border-left: 4px solid #4CAF50;
+}
+
+.notification.error {
+  border-left: 4px solid #f44336;
+}
+
+.notification.warning {
+  border-left: 4px solid #ff9800;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.notification-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.notification.success .notification-icon {
+  color: #4CAF50;
+}
+
+.notification.error .notification-icon {
+  color: #f44336;
+}
+
+.notification.warning .notification-icon {
+  color: #ff9800;
+}
+
+.notification-message {
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.notification-close:hover {
+  color: #333;
+}
+
+.domain-header {
+  margin-top: 1cm;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background: #2b5663;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.domain-image-container {
+  width: 220px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.domain-image {
+  width: 100%;
+  height: 100%;
+  object-fit: background;
+  transition: transform 0.3s ease;
+}
+
+.domain-image:hover {
+  transform: scale(1.05);
+}
+
+.domain-title {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  flex: 1;
+}
+
+.mentors-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mentors-grid {
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.mentors-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.scroll-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-button.left {
+  left: -20px;
+}
+
+.scroll-button.right {
+  right: -20px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mentor-card {
+  background-color: #2b5663;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-name {
+  color: var(--primary-color);
+  font-size: 1 rem;
+  margin-bottom: 0.25rem;
+}
+
+.mentor-domain {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.mentor-section {
+  margin-bottom: 1.5rem;
+}
+
+.mentor-section p {
+  text-align: center;
+  color: var(--text-light);
+  
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.connect-btn {
+  margin-bottom: 1cm;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #00a3bd;
+}
+
+@media (max-width: 768px) {
+  .domain-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .domain-image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .domain-title {
+    font-size: 2rem;
+  }
+
+  .scroll-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+  }
+} 
